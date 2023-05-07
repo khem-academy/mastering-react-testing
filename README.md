@@ -6,7 +6,7 @@ Welcome to the GitHub repository for the book "Mastering React Testing"! This bo
 
 You can purchase "Mastering React Testing" on Gumroad. Visit the following link to get your copy and level up your React testing skills:
 
-[Gumroad - Mastering React Testing](https://khemsok97.gumroad.com/l/kyhpsj)
+<a href="https://khemsok97.gumroad.com/l/kyhpsj" target="_blank">Gumroad - Mastering React Testing</a>
 
 ## 📖 Table of Contents
 
@@ -23,19 +23,19 @@ You can purchase "Mastering React Testing" on Gumroad. Visit the following link 
 
 To continue learning about testing React applications, consider exploring the following resources:
 
-1. [Jest documentation](https://jestjs.io/docs/getting-started)
-2. [React Testing Library documentation](https://testing-library.com/docs/react-testing-library/intro)
-3. [React Design Patterns and Best Practices](https://www.oreilly.com/library/view/react-design-patterns/9781786464538/) by Michele Bertoli
-4. [Testing JavaScript](https://testingjavascript.com/) by Kent C. Dodds
+1. <a href="https://jestjs.io/docs/getting-started" target="_blank">Jest documentation</a>
+2. <a href="https://testing-library.com/docs/react-testing-library/intro" target="_blank">React Testing Library documentation</a>
+3. <a href="https://www.oreilly.com/library/view/react-design-patterns/9781786464538/" target="_blank">React Design Patterns and Best Practices</a> by Michele Bertoli
+4. <a href="https://testingjavascript.com/" target="_blank">Testing JavaScript</a> by Kent C. Dodds
 
 ## 🌟 Staying Up-to-Date with React Testing Developments
 
 To stay current with the latest developments in React testing, follow these resources and communities:
 
-1. [React official blog](https://react.dev/blog)
-2. [React Testing Library GitHub repository](https://github.com/testing-library/react-testing-library)
-3. [Jest GitHub repository](https://github.com/facebook/jest)
-4. [React subreddit](https://www.reddit.com/r/reactjs/)
+1. <a href="https://react.dev/blog" target="_blank">React official blog</a>
+2. <a href="https://github.com/testing-library/react-testing-library" target="_blank">React Testing Library GitHub repository</a>
+3. <a href="https://github.com/facebook/jest" target="_blank">Jest GitHub repository</a>
+4. <a href="https://www.reddit.com/r/reactjs/" target="_blank">React subreddit</a>
 
 ## 📚 Book Code Examples
 
