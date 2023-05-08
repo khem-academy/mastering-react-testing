@@ -3,7 +3,6 @@ function App() {
     <div className="flex h-screen overflow-hidden">
       <div className="m-auto">
         <div>
-          <h1>WTF</h1>
           <img src="./assets/img/logo.png" alt="Mastering React Testing" className="mx-auto w-80 h-80" />
           <h1 className="font-extrabold p-3 text-6xl text-center bg-gradient-to-r from-green-400 to-blue-500 text-transparent bg-clip-text">Mastering React Testing</h1>
           <p className="text-center text-sm text-gray-600 italic">Level up your React skills with comprehensive testing techniques - The ultimate guide to mastering React testing!</p>
