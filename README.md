@@ -12,7 +12,7 @@ You can purchase "Mastering React Testing" on Gumroad. Visit the following link 
 
 1. **🎯 The Importance of Testing**: We discuss the benefits of testing and its role in creating reliable, maintainable, and scalable applications.
 2. **🛠️ Setting Up the Testing Environment**: We introduce Jest, the popular testing framework for JavaScript, and React Testing Library, which simplifies testing React components.
-3. **🧪 Testing React Components**: We delve into the significance of testing user interactions with components, such as button clicks, form submissions, and input field changes. We examine the use of `fireEvent` and other React Testing Library utilities to simulate these interactions and validate the component's behavior in response to user actions.
+3. **🧪 Testing React Components**: We delve into the significance of testing user interactions with components, such as button clicks, form submissions, and input field changes. We examine the use of `userEvent` from the React Testing Library to simulate these interactions in a more realistic and comprehensive way. This allows us to validate the component's behavior in response to user actions.
 4. **🚀 Advanced Testing Techniques**: We explore techniques such as testing components with asynchronous behavior, using context and hooks, snapshot testing, mocking functions and modules, and testing custom hooks.
 5. **🔗 Integration Testing**: We highlight the importance of integration testing and provide examples of writing integration tests with Jest and React Testing Library.
 6. **🌟 Testing Strategies and Patterns**: We discuss Test-Driven Development (TDD), code coverage, and common testing patterns.
@@ -25,8 +25,9 @@ To continue learning about testing React applications, consider exploring the fo
 
 1. <a href="https://jestjs.io/docs/getting-started" target="_blank">Jest documentation</a>
 2. <a href="https://testing-library.com/docs/react-testing-library/intro" target="_blank">React Testing Library documentation</a>
-3. <a href="https://www.oreilly.com/library/view/react-design-patterns/9781786464538/" target="_blank">React Design Patterns and Best Practices</a> by Michele Bertoli
-4. <a href="https://testingjavascript.com/" target="_blank">Testing JavaScript</a> by Kent C. Dodds
+3. <a href="https://testing-library.com/docs/user-event/intro" target="_blank">UserEvent documentation</a> - Advanced simulation of browser interactions
+4. <a href="https://www.oreilly.com/library/view/react-design-patterns/9781786464538/" target="_blank">React Design Patterns and Best Practices</a> by Michele Bertoli
+5. <a href="https://testingjavascript.com/" target="_blank">Testing JavaScript</a> by Kent C. Dodds
 
 ## 🌟 Staying Up-to-Date with React Testing Developments
 

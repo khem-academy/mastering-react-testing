@@ -1,5 +1,6 @@
 import React from 'react'
-import { render, fireEvent, screen } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
+import userEvent from '@testing-library/user-event'
 import ToggleMessage from '../ToggleMessage'
 
 describe('ToggleMessage tests', () => {
@@ -8,20 +9,24 @@ describe('ToggleMessage tests', () => {
     expect(screen.queryByTestId('message')).toBeNull()
   })
 
-  test('message becomes visible when button is clicked', () => {
+  test('message becomes visible when button is clicked', async () => {
+    const user = userEvent.setup()
+
     render(<ToggleMessage />)
     const toggleButton = screen.getByRole('button', { name: 'Toggle Message' })
 
-    fireEvent.click(toggleButton)
+    await user.click(toggleButton)
     expect(screen.getByTestId('message')).toBeInTheDocument()
   })
 
-  test('message becomes hidden again after clicking button twice', () => {
+  test('message becomes hidden again after clicking button twice', async () => {
+    const user = userEvent.setup()
+
     render(<ToggleMessage />)
     const toggleButton = screen.getByRole('button', { name: 'Toggle Message' })
 
-    fireEvent.click(toggleButton)
-    fireEvent.click(toggleButton)
+    await user.click(toggleButton)
+    await user.click(toggleButton)
     expect(screen.queryByTestId('message')).toBeNull()
   })
 })

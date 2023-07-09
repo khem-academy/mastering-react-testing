@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import { render, screen, fireEvent } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
+import userEvent from '@testing-library/user-event'
 import Modal from '../Modal'
 
 const TestComponent = () => {
@@ -14,11 +15,13 @@ const TestComponent = () => {
 }
 
 describe('Modal tests', () => {
-  test('focuses the close button when opened', () => {
+  test('focuses the close button when opened', async () => {
+    const user = userEvent.setup()
+
     render(<TestComponent />)
 
     const openButton = screen.getByText('Open Modal')
-    fireEvent.click(openButton)
+    await user.click(openButton)
 
     const closeButton = screen.getByText('Close')
     expect(closeButton).toHaveFocus()

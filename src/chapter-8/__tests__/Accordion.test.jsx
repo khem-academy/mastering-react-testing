@@ -1,5 +1,6 @@
 import React from 'react'
-import { render, screen, fireEvent } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
+import userEvent from '@testing-library/user-event'
 import Accordion from '../Accordion'
 
 const items = [
@@ -9,16 +10,18 @@ const items = [
 ]
 
 describe('Accordion tests', () => {
-  test('properly sets ARIA attributes', () => {
-    render(<Accordion items={items} />)
+  test('properly sets ARIA attributes', async () => {
+    const user = userEvent.setup()
 
+    render(<Accordion items={items} />)
     const firstItemButton = screen.getByText('Item 1')
     const secondItemButton = screen.getByText('Item 2')
 
     expect(firstItemButton).toHaveAttribute('aria-expanded', 'false')
+
     expect(secondItemButton).toHaveAttribute('aria-expanded', 'false')
 
-    fireEvent.click(firstItemButton)
+    await user.click(firstItemButton)
 
     expect(firstItemButton).toHaveAttribute('aria-expanded', 'true')
     expect(secondItemButton).toHaveAttribute('aria-expanded', 'false')
